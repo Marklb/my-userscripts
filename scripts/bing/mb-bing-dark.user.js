@@ -1,11 +1,11 @@
 // ==UserScript==
 // @name         MB Bing Dark
 // @namespace    https://userscripts.themarkthings.com
-// @version      0.1
+// @version      0.2
 // @description  Dark theme for Bing
 // @author       Mark Berry (https://github.com/Marklb)
 // @match        https://www.bing.com/*
-// @grant        GM_addStyle
+// @grant        none
 // @updateURL    https://raw.githubusercontent.com/Marklb/my-userscripts/master/scripts/bing/mb-bing-dark.user.js
 // @downloadURL  https://raw.githubusercontent.com/Marklb/my-userscripts/master/scripts/bing/mb-bing-dark.user.js
 // ==/UserScript==
@@ -21,7 +21,7 @@
 
   console.log('[MB Bing Dark] Started')
 
-  GM_addStyle(`
+  const css = `
   html {
     --main-bg-color: rgba(40,40,40,1);
     --main-bg-color-dark: rgba(35,35,35,1);
@@ -856,6 +856,13 @@
   ::-webkit-scrollbar-thumb {
     background-color: rgb(203, 175, 248, 0.4);
   }  
-  `)
+  `
+
+const styles = document.createElement('style')
+styles.id = 'mb-styles--mb-bing-dark'
+styles.classList.add('mb-styles')
+styles.type = 'text/css'
+styles.innerHTML = css
+document.querySelector('html').appendChild(styles)
 
 })()
