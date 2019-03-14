@@ -6,8 +6,8 @@
 // @author       Mark Berry (https://github.com/Marklb)
 // @match        https://www.bing.com/*
 // @grant        GM_addStyle
-// @updateURL   https://raw.githubusercontent.com/Marklb/my-userscripts/master/bing/mb-bing-dark.user.js
-// @downloadURL https://raw.githubusercontent.com/Marklb/my-userscripts/master/bing/mb-bing-dark.user.js
+// @updateURL    https://raw.githubusercontent.com/Marklb/my-userscripts/master/scripts/bing/mb-bing-dark.user.js
+// @downloadURL  https://raw.githubusercontent.com/Marklb/my-userscripts/master/scripts/bing/mb-bing-dark.user.js
 // ==/UserScript==
 
 (function() {

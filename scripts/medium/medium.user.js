@@ -10,6 +10,8 @@
 // @match        *journal.artfuldev.com/*
 // @match        *netbasal.com/*
 // @grant        GM_addStyle
+// @updateURL    https://raw.githubusercontent.com/Marklb/my-userscripts/master/scripts/medium/medium.user.js
+// @downloadURL  https://raw.githubusercontent.com/Marklb/my-userscripts/master/scripts/medium/medium.user.js
 // ==/UserScript==
 
 (function() {

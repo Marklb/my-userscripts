@@ -7,6 +7,8 @@
 // @run-at       document-idle
 // @match        http*://stackoverflow.com/questions/*
 // @grant        GM_addStyle
+// @updateURL    https://raw.githubusercontent.com/Marklb/my-userscripts/master/scripts/stackoverflow/stackoverflow.user.js
+// @downloadURL  https://raw.githubusercontent.com/Marklb/my-userscripts/master/scripts/stackoverflow/stackoverflow.user.js
 // ==/UserScript==
 
 (function() {

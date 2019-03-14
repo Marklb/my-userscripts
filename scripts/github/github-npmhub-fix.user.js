@@ -6,6 +6,8 @@
 // @author       Mark Berry (https://github.com/Marklb)
 // @match        https://github.com/*
 // @grant        GM_addStyle
+// @updateURL    https://raw.githubusercontent.com/Marklb/my-userscripts/master/scripts/github/github-npmhub-fix.user.user.js
+// @downloadURL  https://raw.githubusercontent.com/Marklb/my-userscripts/master/scripts/github/github-npmhub-fix.user.user.js
 // ==/UserScript==
 
 (function() {

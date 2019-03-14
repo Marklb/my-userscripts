@@ -7,6 +7,8 @@
 // @match        https://www.hulu.com/*
 // @grant        none
 // @run-at       document-idle
+// @updateURL    https://raw.githubusercontent.com/Marklb/my-userscripts/master/scripts/hulu/hulu.user.js
+// @downloadURL  https://raw.githubusercontent.com/Marklb/my-userscripts/master/scripts/hulu/hulu.user.js
 // ==/UserScript==
 
 (function() {

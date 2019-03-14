@@ -6,6 +6,8 @@
 // @author       Mark Berry (https://github.com/Marklb)
 // @match        https://www.instagram.com/*
 // @grant        none
+// @updateURL    https://raw.githubusercontent.com/Marklb/my-userscripts/master/scripts/instagram/instagram.user.js
+// @downloadURL  https://raw.githubusercontent.com/Marklb/my-userscripts/master/scripts/instagram/instagram.user.js
 // ==/UserScript==
 
 (function() {
