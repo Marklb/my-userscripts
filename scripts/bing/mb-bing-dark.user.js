@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         MB Bing Dark
 // @namespace    https://userscripts.themarkthings.com
-// @version      0.3
+// @version      0.4
 // @description  Dark theme for Bing
 // @author       Mark Berry (https://github.com/Marklb)
 // @match        https://www.bing.com/*
@@ -671,6 +671,22 @@
     text-decoration: none;
   }
   
+  .dc_mn {
+    color: var(--main-fg-color-soft);
+  }
+  
+  .dc_st {
+    color: var(--main-fg-color-soft);
+  }
+  
+  .dc_prn {
+    color: var(--main-fg-color-dim);
+  }
+  
+  #b_results .b_ans:not(.b_top):not(.b_topborder) :not(.b_entityTP) .btm_sml .b_mopexpref .expansionDefaultText, #b_results .b_ans:not(.b_top):not(.b_topborder) :not(.b_entityTP) .btm_sml .b_mopexpref .expansionCustomizedText, #b_results .b_ans.b_mop .btm_sml .b_mopexpref .expansionDefaultText, #b_results .b_ans.b_mop .btm_sml .b_mopexpref .expansionCustomizedText {
+    color: var(--main-fg-color-link);
+  }
+  
   /*
     Search results table.
   */
@@ -855,7 +871,7 @@
   
   ::-webkit-scrollbar-thumb {
     background-color: rgb(203, 175, 248, 0.4);
-  }  
+  }
   `
 
 const styles = document.createElement('style')
