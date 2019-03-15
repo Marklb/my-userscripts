@@ -687,6 +687,14 @@
     color: var(--main-fg-color-link);
   }
   
+  #rdans .rd_postbody {
+    color: var(--main-fg-color-dim);
+  }
+  
+  #rdans .rd_commentbody {
+    color: var(--main-fg-color-soft);
+  }
+  
   /*
     Search results table.
   */
