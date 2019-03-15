@@ -1,11 +1,12 @@
 // ==UserScript==
 // @name         MB Bing Dark
 // @namespace    https://userscripts.themarkthings.com
-// @version      0.4
+// @version      0.5
 // @description  Dark theme for Bing
 // @author       Mark Berry (https://github.com/Marklb)
 // @match        https://www.bing.com/*
 // @grant        none
+// @run-at       document-start
 // @updateURL    https://raw.githubusercontent.com/Marklb/my-userscripts/master/scripts/bing/mb-bing-dark.user.js
 // @downloadURL  https://raw.githubusercontent.com/Marklb/my-userscripts/master/scripts/bing/mb-bing-dark.user.js
 // ==/UserScript==
