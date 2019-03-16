@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         MB Bing Dark
 // @namespace    https://userscripts.themarkthings.com
-// @version      0.5
+// @version      0.6
 // @description  Dark theme for Bing
 // @author       Mark Berry (https://github.com/Marklb)
 // @match        https://www.bing.com/*
@@ -693,6 +693,19 @@
   }
   
   #rdans .rd_commentbody {
+    color: var(--main-fg-color-soft);
+  }
+
+  #tabcontrol_16_61818B_menu > li {
+    background-color: var(--main-bg-color);
+    color: var(--main-fg-color-soft);
+  }
+
+  #b_results ::placeholder {
+    color: var(--main-fg-color-dim);
+  }
+
+  .b_scopebar, .b_scopebar a, .b_scopebar a:visited, .id_button, .id_button:visited {
     color: var(--main-fg-color-soft);
   }
   
