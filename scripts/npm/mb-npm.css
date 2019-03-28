@@ -1,0 +1,252 @@
+@-moz-document regexp("https?://www\\.npmjs\\.com/package/.*") {
+  /* From a script named "Npm Dark Theme" */
+  .global__application___g4ZRy main{background-color:#2A303C}main .black,main .hover-black:focus,main .hover-black:hover{color:#fff}main .black-80{color:rgba(255,255,255,0.8)}main .black-60{color:rgba(255,255,255,0.6)}main .black-50{color:rgba(255,255,255,0.5)}main .b--black-10{border-color:rgba(255,255,255,0.2)}.package__sectionHeader___Ov0xh{color:#fff}.package__rightSidebar___9dMXo{background:#20242d}.package__install___3jWoO svg,.package__downloads___1Bmfo svg,.package__runkit___1iQd- svg .line,.package__runkit___1iQd- svg .line-round,.package__githubIcon___3R9ox svg g{fill:#fff}.tabs__tabs___17CUw{background:#20242d}.tabs__tab___1gHZ2.tabs__yellow___1c2N8 .tabs__tabLink___2tDwu,.tabs__tabLink___2tDwu,.tabs__tab___1gHZ2.tabs__purple___3sUHq .tabs__tabLink___2tDwu,.tabs__tab___1gHZ2.tabs__violet___rtKBH .tabs__tabLink___2tDwu{color:#fff}.tabs__tab___1gHZ2.tabs__yellow___1c2N8:hover{background-color:rgba(255,205,58,0.1)}.tabs__tab___1gHZ2:hover{background-color:rgba(203,56,55,0.1)}.tabs__tab___1gHZ2.tabs__purple___3sUHq:hover{background-color:rgba(200,54,195,0.1)}.tabs__tab___1gHZ2.tabs__violet___rtKBH:hover{background-color:rgba(137,86,255,0.1)}.tabs__tab___1gHZ2.tabs__yellow___1c2N8.tabs__tabActive___29JkF{background-color:rgba(255,205,58,0.2)}.tabs__tab___1gHZ2.tabs__tabActive___29JkF{background-color:rgba(203,56,55,0.2)}.tabs__tab___1gHZ2.tabs__purple___3sUHq.tabs__tabActive___29JkF{background-color:rgba(200,54,195,0.2)}.tabs__tab___1gHZ2.tabs__violet___rtKBH.tabs__tabActive___29JkF{background-color:rgba(137,86,255,0.2)}.package__infoBox___3RWfG{background:transparent}.forms__buttonGradient___wj4os{background:transparent}.footer__footer___20QpA{background-color:#2A303C}.footer__footer___20QpA h3{color:#fff}.footer__footer___20QpA a{color:#fff}footer.mt4{margin-top:0}.markdown,.markdown p,.markdown li,.markdown__markdown___3yof6 h1,.markdown__markdown___3yof6 h2,.markdown__markdown___3yof6 h3,.markdown__markdown___3yof6 h4,.markdown__markdown___3yof6 h5,.markdown__markdown___3yof6 h6{color:#fff}.markdown__markdown___3yof6 h1,.markdown__markdown___3yof6 h2,.markdown__markdown___3yof6 h3,.markdown__markdown___3yof6 h4,.markdown__markdown___3yof6 h5,.markdown__markdown___3yof6 h6{border-bottom:1px solid rgba(255,255,255,0.1)}.markdown>blockquote,.markdown>pre,.markdown>code,.markdown :not(table):not(thead):not(tbody):not(tr):not(td) blockquote,.markdown :not(table):not(thead):not(tbody):not(tr):not(td) pre,.markdown :not(table):not(thead):not(tbody):not(tr):not(td) code{background:#20242d}.markdown__markdown___3yof6 strong{color:#fff}.markdown .deep-link .deep-link-icon{fill:#fff}.markdown .highlight{background-color:#20242d}.markdown .storage.type,.markdown .keyword,.markdown .variable{color:#82C7C7}.markdown .highlight{color:#BDCCF7}.markdown .string,.markdown .entity.name.function{color:#FB9DB5}.markdown .support.constant,.markdown .support.function,.markdown .support.type{color:#fff}.markdown td,.markdown th{color:#222}
+  
+  
+  /* My customizations to fix/tweak the script */
+  
+  #readme h1,
+  #readme h2,
+  #readme h3,
+  #readme h4,
+  #readme p strong,
+  .pv4 h2 {
+    color: rgba(230,230,230,1);
+  }
+  
+  #readme h2 {
+    border-bottom-color: rgba(203, 175, 248, .3);
+  }
+  
+  #readme .highlight {
+    border: 1px solid rgba(203, 175, 248, .4);
+    border-radius: 0;
+  }
+  
+  #readme .highlight pre.editor {
+    background: transparent;
+  }
+  
+  .markdown > pre {
+    border: 1px solid #CBAFF8;
+    border-radius: 0;
+  }
+  
+  body {
+    background-color: #20242d;
+  }
+  
+  .forms__buttonGradient___wj4os {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  ._wj4os {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  
+  .package__sidebarCode___3QsIw {
+    border-left-width: 1px;
+    border: 1px solid #CBAFF8;
+  }
+  ._3QsIw {
+    border-left-width: 1px;
+    border: 1px solid #CBAFF8;
+  }
+  
+  .tabs__tab___1gHZ2 {
+    border-radius: 0;
+  }
+  ._1gHZ2 {
+    border-radius: 0;
+  }
+  
+  .header__headerMain___KyQaM {
+    border-bottom: 1px solid #CBAFF8;
+    background-color: #20242d;
+  }
+  ._KyQaM {
+    border-bottom: 1px solid #CBAFF8;
+    background-color: #20242d;
+  }
+  
+  .header__headerMain___KyQaM span,
+  ._KyQaM span
+  .header__headerMain___KyQaM nav a,
+  ._KyQaM nav a{
+    color: rgba(230,230,230,1);
+  }
+  
+  .header__headerLinks___2uXWU {
+    border-bottom: 1px solid #CBAFF8;
+    background-color: #20242d;
+  }
+  ._2uXWU {
+    border-bottom: 1px solid #CBAFF8;
+    background-color: #20242d;
+  }
+  
+  .header__header___2KmPM {
+    border-bottom: 0;
+  }
+  ._2KmPM {
+    border-bottom: 0;
+  }
+  
+  .header__searchInput___102CH {
+    background-color: #20242d;
+    color: rgba(230,230,230,1);
+  }
+  ._102CH {
+    background-color: #20242d;
+    color: rgba(230,230,230,1);
+  }
+  
+  .header__searchInput___102CH::placeholder {
+    color: rgba(230,230,230,1);
+  }
+  ._102CH::placeholder {
+    color: rgba(230,230,230,1);
+  }
+  
+  .typeahead__typeahead___qDE0O ul {
+    background-color: #20242d;
+    color: rgba(230,230,230,1);
+    border: 1px solid #CBAFF8;
+  }
+  ._qDE0O ul {
+    background-color: #20242d;
+    color: rgba(230,230,230,1);
+    border: 1px solid #CBAFF8;
+  }
+  
+  .typeahead__typeahead___qDE0O ul li {
+    border-bottom: 1px solid #CBAFF8;
+  }
+  ._qDE0O ul li {
+    border-bottom: 1px solid #CBAFF8;
+  }
+  
+  .bg-white {
+    background-color: #20242d;
+  }
+  
+  .header__userNameLink___3aGt_,
+  ._3aGt_,
+  .header__userDropdown___8SWAs ul .link:not(.header__createOrgButton___1uljS),
+  ._8SWAs ul .link:not(._1uljS) {
+    color: rgba(230,230,230,1);
+  }
+  
+  .header__userNameLink___3aGt_:hover,
+  ._3aGt_:hover,
+  .header__userDropdown___8SWAs ul .link:not(.header__createOrgButton___1uljS):hover,
+  ._8SWAs ul .link:not(._1uljS):hover{
+    color: #CBAFF8;
+  }
+  
+  .header__userDropdown___8SWAs,
+  ._8SWAs,
+  .header__createOrgButton___1uljS,
+  ._1uljS{
+    border-radius: 0;
+  }
+  
+  .header__userDropdown___8SWAs,
+  ._8SWAs,
+  .header__userDropdownHeader___B-1v6,
+  ._B-1v6,
+  .b--black-10 {
+    border-color: #CBAFF8;
+  }
+  
+  .header__userDropdown___8SWAs::before,
+  ._8SWAs::before{
+    border-bottom-color: #CBAFF8;
+  }
+  .header__userDropdown___8SWAs::after,
+  ._8SWAs::after{
+    border-bottom-color: #20242d;
+  }
+  
+  .marketing {
+    border-bottom-color: rgba(203, 175, 248, .3);
+  }
+  
+  /* .markdown > pre */
+  .markdown :not(table):not(thead):not(tbody):not(tr):not(td):not(pre) code {
+    border: 1px solid rgba(203, 175, 248, .2);
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+  
+  /* Header bar containing search */
+  ._2uXWU {
+    background-color: #20242d;
+  }
+  
+  /* Top search input */
+  ._102CH {
+    border: 1px solid #CBAFF8;
+    color: #CBAFF8;
+  }
+  
+  /* Full top header */
+  ._2KmPM {
+    border-bottom-color: rgba(203, 175, 248, .3);
+  }
+  
+  /* Top right links */
+  .Nr1hY {
+    color: #CBAFF8;
+  }
+  
+  /* Profile dropdown header container */
+  .B-1v6 {
+    border-color: #CBAFF8;
+  }
+  
+  /* Profile dropdown header */
+  /* ._3aGt_ {
+    color: #CBAFF8;
+  } */
+  
+  /* Profile dropdown list links */
+  /* ._2ayob {
+    color: #CBAFF8;
+  } */
+  
+  /* Profile dropdown container */
+  ._8SWAs {
+    border-color: #CBAFF8;
+  }
+  
+  /* Profile dropdown button (Create an Organization) */
+  ._2U4fA {
+    width: auto;
+  }
+  
+  /* Profile dropdown button link (Create an Organization) */
+  ._1uljS {
+    border-radius: 0;
+  }
+  
+  /* Gradient button */
+  .wj4os {
+    background-color: #20242d;
+  }
+  
+  /* Footer links */
+  ._20QpA a {
+    color: #CBAFF8;
+  }
+  
+  /* Install text caret */
+  ._3jWoO svg {
+    fill: #CBAFF8;
+  }
+  
+  /* Downloads down arrow */
+  ._1Bmfo svg {
+    fill: #CBAFF8;
+  }
+  
+  }
