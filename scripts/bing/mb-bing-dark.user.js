@@ -894,6 +894,13 @@
   ::-webkit-scrollbar-thumb {
     background-color: rgb(203, 175, 248, 0.4);
   }
+
+  /*
+    Hide the round search
+  */
+  #mfa_actions {
+    display: none;
+  }
   `
 
 const styles = document.createElement('style')

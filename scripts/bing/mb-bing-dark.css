@@ -18,6 +18,52 @@
     
     --main-result-btn-fg-color-active: rgba(100,100,250,1);
   }
+
+  /* Notes for new bing update prep
+
+      Search Bar:
+        648x40
+
+        div container:
+        .b_searchboxForm, .sa_as {
+            background-color: var(--main-bg-color-dark);
+        }
+        .b_searchboxForm {
+            font: 18px/normal 'Segoe UI',Arial,Helvetica,Sans-Serif;
+        }
+        .b_searchboxForm {
+            box-shadow: 0 0 0 1px rgba(0,0,0,.1),0 2px 4px 0 rgba(0,0,0,.16);
+            border-radius: 6px;
+            border: none;
+        }
+
+        input:
+        .hassbi .b_searchboxForm .b_searchbox {
+            margin-right: 10px;
+            padding-right: 25px;
+            box-sizing: border-box;
+        }
+        .b_searchbox {
+            width: 578px;
+        }
+        .b_searchbox {
+            font-size: 16px;
+        }
+        .b_searchbox {
+            width: 490px;
+            margin: 5px 0 1px 20px;
+                margin-right: 0px;
+            padding: 0 10px 0 0;
+                padding-right: 10px;
+            border: 0;
+            max-height: 30px;
+            outline: none;
+            box-sizing: content-box;
+            height: 35px;
+            vertical-align: top;
+            border-radius: 6px;
+        }
+   */
   
   html,
   body {
@@ -869,5 +915,12 @@
   
   ::-webkit-scrollbar-thumb {
     background-color: rgb(203, 175, 248, 0.4);
+  }
+
+  /*
+    Hide the round search
+  */
+  #mfa_actions {
+    display: none;
   }
   }
