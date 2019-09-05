@@ -185,7 +185,8 @@
     background-color: var(--main-bg-color-dark);
   }
   
-  #b_results>li a {
+  #b_results>li a,
+  #b_results > li .na_cnt a, .na_cnt .na_t {
     color: var(--main-fg-color-link) !important;
   }
   
@@ -708,6 +709,14 @@
   .b_scopebar, .b_scopebar a, .b_scopebar a:visited, .id_button, .id_button:visited {
     color: var(--main-fg-color-soft);
   }
+
+  /*
+    Videos of Tile.
+  */
+  .vidr .b_factrow {
+    color: var(--main-fg-color-dim) !important;
+  }
+
   
   /*
     Search results table.
