@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         [Github] Octotree Toggle Old Button
 // @namespace    https://userscripts.themarkthings.com
-// @version      0.2
+// @version      0.3
 // @description  Adds a toggle button similar to the original. The new one is inconvenient and difficult to use.
 // @author       Mark Berry (https://github.com/Marklb)
 // @match        https://github.com/*
@@ -54,10 +54,10 @@
 
 /* Remove footer */
 .octotree-sidebar.octotree-github-sidebar {
-  padding-bottom: 0;
+  padding-bottom: 0 !important;
 }
 .octotree-sidebar.octotree-github-sidebar .octotree-footer {
-  display: none;
+  display: none !important;
 }
   `)
 
