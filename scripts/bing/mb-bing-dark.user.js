@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         MB Bing Dark
 // @namespace    https://userscripts.themarkthings.com
-// @version      0.7
+// @version      0.8
 // @description  Dark theme for Bing
 // @author       Mark Berry (https://github.com/Marklb)
 // @match        https://www.bing.com/*
@@ -27,19 +27,23 @@
     --main-bg-color: rgba(40,40,40,1);
     --main-bg-color-dark: rgba(35,35,35,1);
     --main-bg-color-bright: rgba(160,160,160,1);
-    
+  
     --main-fg-color-dim: rgba(120,120,120,1);
     --main-fg-color-soft: rgba(150,150,150,1);
     --main-fg-color-bright: rgba(230,230,230,1);
     --main-fg-color-active: rgb(203, 175, 248, 0.4);
     --main-fg-color-link: rgba(100,100,250,1);
-    
+  
     --main-border-color: rgb(203, 175, 248, 0.4);
     --main-border-color-hover: rgb(203, 175, 248, 0.5);
-    
+  
     --main-result-btn-bg: rgba(20,20,20,1);
     --main-result-btn-bg-hover: rgba(30,30,30,1);
     
+    --main-result-see-all-btn-bg: var(--main-bg-color-dark);
+    --main-result-see-all-btn-color: var(--main-fg-color-dim);
+    --main-result-see-all-btn-color-hover: var(--main-fg-color-soft);
+  
     --main-result-btn-fg-color-active: rgba(100,100,250,1);
   }
   
@@ -141,8 +145,22 @@
     color: var(--main-fg-color-soft);
   }
   
+  /* #b_header .phead {
+    background: var(--main-bg-color);
+    border-bottom: 1px solid var(--main-bg-color-dark);
+    padding: 12px 0 12px 0;
+  } */
+  
+  #b_header .b_searchboxForm {
+    border: 1px solid var(--main-bg-color-dark);
+  }
+  
   .b_scopebar li a {
     color: var(--main-fg-color-soft);
+  }
+  
+  .b_scopebar li.b_active {
+    border-bottom: 3px solid var(--main-fg-color-active);
   }
   
   .b_scopebar li.b_active a {
@@ -169,6 +187,36 @@
   
   #b_context .b_ans span.sw_plus {
     color: var(--main-fg-color-link);
+  }
+  
+  #b_context .b_ans .b_relshc .b_vList > li {
+    border-top: 1px solid var(--main-border-color);
+  }
+  
+  #b_context .b_ans .b_relshc .b_vList > li:last-child {
+    border-bottom: 1px solid var(--main-border-color);
+  }
+  
+  #b_context .b_ans .b_relshc .b_hList > li {
+    border: 1px solid var(--main-border-color);
+  }
+  
+  .b_rich .whitebg {
+    background-color: var(--main-result-see-all-btn-bg) !important;
+  }
+  
+  /* .b_rich:hover .whitebg {
+    background-color: var(--main-result-btn-bg-hover) !important;
+  } */
+  
+  .b_rich .txtblk {
+    color: var(--main-result-see-all-btn-color) !important;
+  }
+  .b_rich:hover .txtblk {
+    color: var(--main-result-see-all-btn-color-hover) !important;
+  }
+  .b_rich:hover .svgpath {
+    fill: var(--main-result-see-all-btn-color-hover) !important;
   }
   
   #b_context .b_subModule, 
@@ -696,27 +744,27 @@
   #rdans .rd_commentbody {
     color: var(--main-fg-color-soft);
   }
-
+  
   #tabcontrol_16_61818B_menu > li {
     background-color: var(--main-bg-color);
     color: var(--main-fg-color-soft);
   }
-
+  
   #b_results ::placeholder {
     color: var(--main-fg-color-dim);
   }
-
+  
   .b_scopebar, .b_scopebar a, .b_scopebar a:visited, .id_button, .id_button:visited {
     color: var(--main-fg-color-soft);
   }
-
+  
   /*
     Videos of Tile.
   */
   .vidr .b_factrow {
     color: var(--main-fg-color-dim) !important;
   }
-
+  
   
   /*
     Search results table.
@@ -813,7 +861,7 @@
   }
   
   /*
-    'Make Bing yout search engine' button.
+    'Make Bing your search engine' button.
   */
   #b_opalpers .b_op_flyout {
     background: var(--main-bg-color-dark);
@@ -822,6 +870,13 @@
   
   #b_opalpers a {
     color: var(--main-fg-color-soft);
+  }
+  
+  /*
+    'Get the new Microsoft Edge' button.
+  */
+  #b_opalpers[data-flyout="Anaheim"] a {
+    display: none !important;
   }
   
   /*
@@ -868,12 +923,12 @@
   .b_ad {
     /*  Gets detected and a new add element without a class gets inserted.  */
     /*   display:none; */
-    
+  
     /*  Gets detected and a new add element without a class gets inserted.  */
     /*   opacity: 0;
     max-height: 0;
     padding: 0 !important; */
-    
+  
     /* Seems fine so far */
     position: absolute;
     transform: translateX(-9999px);
@@ -903,12 +958,19 @@
   ::-webkit-scrollbar-thumb {
     background-color: rgb(203, 175, 248, 0.4);
   }
-
+  
   /*
     Hide the round search
   */
   #mfa_actions {
     display: none;
+  }
+  
+  /*
+    Hide feedback circle
+  */
+  .feedback-binded {
+    display: none !important;
   }
   `
 
