@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         MB Bing Dark
 // @namespace    https://userscripts.themarkthings.com
-// @version      0.8
+// @version      0.9
 // @description  Dark theme for Bing
 // @author       Mark Berry (https://github.com/Marklb)
 // @match        https://www.bing.com/*
@@ -970,6 +970,13 @@
     Hide feedback circle
   */
   .feedback-binded {
+    display: none !important;
+  }
+
+  /*
+    Hide download new Microsoft Edge footer
+  */
+  #b_notificationContainer_bop {
     display: none !important;
   }
   `

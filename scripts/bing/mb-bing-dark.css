@@ -948,5 +948,12 @@
   .feedback-binded {
     display: none !important;
   }
+
+  /*
+    Hide download new Microsoft Edge footer
+  */
+  #b_notificationContainer_bop {
+    display: none !important;
+  }
   
 }
